@@ -34,6 +34,7 @@ public class StudentController {
 	@RequestMapping(value = "/getcity", method = RequestMethod.GET)
 	public @ResponseBody List<City> cities() {
 		try {
+			System.out.println("Hello");
 			return this.cityService.getAllCities();
 		}
 		catch(Exception ex) {
